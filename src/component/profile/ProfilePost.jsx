@@ -3,8 +3,6 @@ import { FaUserTag } from "react-icons/fa";
 import { CgBookmark } from "react-icons/cg";
 import { AiOutlineTable } from "react-icons/ai";
 import { useState } from "react";
-import ProfilePostCard from "./ProfilePostCard";
-import ProfileSavedCard from "./ProfileSavedCard";
 import ProfileTaggedCard from "./ProfileTaggedCard";
 function ProfilePost() {
 

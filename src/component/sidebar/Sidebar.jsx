@@ -29,7 +29,7 @@ const[active,setActive]=useState("")
 
   return (
     <div className='border-r-[1px] h-[100%]  '>
-      <div className='border-gray-400  side-menu sticky top-0 w-56'>
+      <div className='border-gray-400 h-[100vh] side-menu sticky top-0 w-56'>
         <div className='pt-10'>
           <img className='w-40 cursor-pointer px-5 ' src='https://i.imgur.com/zqpwkLQ.png' alt='' />
         </div>
