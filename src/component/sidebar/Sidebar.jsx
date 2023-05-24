@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import {AiOutlineMenu} from 'react-icons/ai'
 import menu from './sidebar-config'
 import { useNavigate } from 'react-router-dom'
+import ProfileUserDetails from '../profile/ProfileUserDetails'
+import Profile from '../../pages/profile/Profile'
 function Sidebar() {
 const[active,setActive]=useState("Home")
   const navigate=useNavigate();
@@ -27,7 +29,7 @@ const[active,setActive]=useState("Home")
   }
 
   return (
-    <div className='w-56  h-[100vh] sticky border-r-[1px] border-gray-400'>
+    <div className='w-56 h-[100vh] border-r-[1px] border-gray-400'>
       <div >
         <div className='pt-10'>
           <img className='w-40 cursor-pointer px-5 ' src='https://i.imgur.com/zqpwkLQ.png' alt='' />
@@ -44,6 +46,7 @@ const[active,setActive]=useState("Home")
       <AiOutlineMenu className='font-extrabold w-5  text-[26px]' />
       <p className='ml-5'>More</p>
       </div>
+      
     </div>
   )
 }
