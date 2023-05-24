@@ -24,6 +24,9 @@ function ProfileUserDetails() {
           <p className="about"></p>
         </div>
       </div>
+      <div>
+  
+      </div>
     </div>
   );
 }

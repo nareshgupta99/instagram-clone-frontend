@@ -7,8 +7,8 @@ import Profile from '../profile/Profile'
 function Router() {
   return (
     <div>
-        <div className='flex'>
-            <div>
+        <div className='flex ' >
+            <div className=''>
                 <Sidebar />
             </div>
            <Routes>
