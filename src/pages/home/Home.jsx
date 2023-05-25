@@ -1,39 +1,24 @@
-import React from 'react'
-import Story from '../../component/home/Story'
-import UserPicture from "../../component/home/user.jpg";
+import React from "react";
+import Story from "../../component/home/Story";
+import UserPosts from "../../component/home/UserPosts";
 
 function Home() {
-  return (
-    <div className=''>
-      <div className='flex'>
+  return <div className="home w-full flex ml-[3.75rem]">
+    <div className="flex w-full">
+      <div className="flex flex-col ">
 
-      <div className='flex  w-[100vh] ml-10 mt-12 gap-x-2'>
-         {[1,1,1,1,11,1].map((i)=><Story />)}
+        <div className="story-div flex  p-8 gap-x-2 ">
+        {[1,1,1,1,11,11,1,1,11].map((i)=><Story />)}
+        </div>
+        <div className="flex flex-col  mt-4 p-2">
+        {[1,1,1,11,1,1].map(()=> <UserPosts />)}
+        </div>
       </div>
-      <div className='mt-12 ml-11'>
-      <div className=" md:flex items-center hidden  ">
-        
-
-        <img
-          class="object-cover  h-[60px] rounded-full w-[60px] cursor-pointer  "
-          src={UserPicture}
-          /><div>
-            
-        <h6 className='pl-3'>UserName</h6>
-          <p>Name</p>
-          </div>
-          <button className='text-blue-600 font-semibold ml-12 '> Switch</button>
-          </div>
-       
-       
+      <div className="ml-[1%]">
+        Home
       </div>
-      </div>
-      <div>
-      posts
-      </div>
-      
     </div>
-  )
+  </div>;
 }
 
-export default Home
+export default Home;

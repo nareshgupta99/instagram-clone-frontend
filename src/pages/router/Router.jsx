@@ -7,7 +7,7 @@ import Profile from "../profile/Profile";
 function Router() {
   return (
     <div>
-      <div className="flex">
+      <div className="flex w-full">
         <div className="">
 
         <Sidebar />
